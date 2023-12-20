@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+body {
+    background-color: rgb(49, 43, 49);
+    color: aliceblue;
+    font-family: sans-serif;
+}
+ 
+h1, h2, h3, h4, h5, h6{
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: paleturquoise;
+}
+
+img {
+    width: 100%;
+
+}
+
+.text-brand {
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-base {
+    background-color: rgb(22, 22, 22);
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255,255,255, 0.1);
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background: linear-gradient(90deg, #e47b9e , #dc61ec );
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(112, 58, 99, 0.904);
+}
+
+.navbar .nav-link{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link.active {
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar .nav-link:hover {
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 10vh;
+    }
+
+    #logo {
+        width: 80px;
+        border-radius: 40px;
+        border: 3px solid whitesmoke;
+        box-shadow: 0px 0px 6px #d6f0ee;
+    }
+
+    /* CONTENT WRAPPER */
+    
+
+}
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 800;
+}
+
+.btn-brand {
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    border-color: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    color: rgb(167, 165, 165);
+    border-color: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #e47b9e 0%, #dc61ec 30%);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+#contact .form-control {
+    background-color: #df93e0;
+    border-color: #ff64d8;
+    color: whitesmoke;
+}
+
+#contact .form-control:focus {
+    border-color: #f385ce;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: whitesmoke;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+.social-icons {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
